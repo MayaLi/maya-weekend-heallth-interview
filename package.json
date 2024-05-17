@@ -1,0 +1,14 @@
+{
+  "name": "maya-weekend-heallth-interview",
+  "version": "1.0.0",
+  "description": "weekend health takehome challenge",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maya Li",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
