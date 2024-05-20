@@ -19,10 +19,15 @@ const args = yargs
     .parseSync()
 
 const input = args.input
-const dictionary = args.dictionary.split(',').map((w) => w.trim().toLowerCase())
+const dictionary = args.dictionary.split(',')
 
 try {
-    console.log(`findWords(${input}, ${dictionary})`)
+    if (dictionary.length === 0) {
+        throw new Error(
+            'Please provide a list of dictionary words separated by comma'
+        )
+    }
+    console.log(`-- findWords(${input}, ${dictionary})`)
     const foundWords = findWords(input, dictionary)
 
     if (foundWords.length === 0) {
